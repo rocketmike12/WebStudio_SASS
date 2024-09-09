@@ -1,0 +1,91 @@
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+    position: fixed;
+    top: 0;
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+
+    .company-logo {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35.96px;
+        letter-spacing: 0.03em;
+        color: $accent-color;
+        &-header {
+            color: black;
+        }
+        
+        &-footer {
+            color: #ffffff; 
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 60px;
+        &-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.41px;
+            letter-spacing: 0.02em;
+            color: #212121;
+            &:hover {
+                color: $accent-color;
+            }
+
+            .current {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #2196f3;
+                    height: 4px;
+                    border-radius: 2px;
+                    width: 100%;
+                    bottom: -35px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .contact-list {
+        display: flex;
+        gap: 50px;
+        margin-left: auto;
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            &:hover {
+                .contact-list-icon {
+                    fill: $accent-color;
+                }
+
+                .contact-list-link {
+                    color: $accent-color;
+                }
+            }
+        }
+        
+        &-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16.41px;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+        
+        &-icon {
+            fill: #757575;
+        }   
+    }
+}
