@@ -1,5 +1,5 @@
 .header {
-    background-color: #ffffff;
+    background-color: $white;
     width: 100%;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -7,63 +7,49 @@
     position: fixed;
     top: 0;
     &-container {
-        display: flex;
-        align-items: center;
-        gap: 93px;
+        @include flex(_, center, 93px, _, _);
     }
 
     .company-logo {
-        font-family: Raleway;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 35.96px;
-        letter-spacing: 0.03em;
+        @include typography(Raleway, 26px, 700, 35.96px, 0.03em);
         color: $accent-color;
         &-header {
-            color: black;
+            color: $black;
         }
         
         &-footer {
-            color: #ffffff; 
+            color: $white; 
         }
     }
 
     .nav-list {
-        display: flex;
-        gap: 60px;
+        @include flex(_, _, 60px, _, _);
         &-link {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16.41px;
-            letter-spacing: 0.02em;
-            color: #212121;
+            @include typography(inherit, 14px, 500, 16.41px, 0.02em);
+            color: $dgrey;
             &:hover {
                 color: $accent-color;
             }
-
-            .current {
-                position: relative;
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #2196f3;
-                    height: 4px;
-                    border-radius: 2px;
-                    width: 100%;
-                    bottom: -35px;
-                    left: 0;
-                }
+        }
+        .current {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $accent-color;
+                height: 4px;
+                border-radius: 2px;
+                width: 100%;
+                bottom: -35px;
+                left: 0;
             }
         }
     }
     .contact-list {
-        display: flex;
-        gap: 50px;
+        @include flex(_, _, 50px, _, _);
         margin-left: auto;
         &-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            @include flex(_, center, 10px, _, _);
             
             &:hover {
                 .contact-list-icon {
@@ -77,15 +63,12 @@
         }
         
         &-link {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16.41px;
-            letter-spacing: 0.02em;
-            color: #757575;
+            @include typography(inherit, 14px, 500, 16.41px, 0.02em);
+            color: $lgrey;
         }
         
         &-icon {
-            fill: #757575;
+            fill: $lgrey;
         }   
     }
 }

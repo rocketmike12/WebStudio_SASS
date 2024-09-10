@@ -57,30 +57,38 @@ img {
 }
 .header-container {
   display: flex;
+  justify-content: _;
   align-items: center;
   gap: 93px;
+  flex-wrap: _;
+  flex-direction: _;
 }
 .header .company-logo {
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 35.96px;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 .header .company-logo-header {
-  color: black;
+  color: #000000;
 }
 .header .company-logo-footer {
   color: #ffffff;
 }
 .header .nav-list {
   display: flex;
+  justify-content: _;
+  align-items: _;
   gap: 60px;
+  flex-wrap: _;
+  flex-direction: _;
 }
 .header .nav-list-link {
-  font-weight: 500;
+  font-family: inherit;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16.41px;
   letter-spacing: 0.02em;
   color: #212121;
@@ -88,10 +96,10 @@ img {
 .header .nav-list-link:hover {
   color: #2196f3;
 }
-.header .nav-list-link .current {
+.header .nav-list .current {
   position: relative;
 }
-.header .nav-list-link .current::after {
+.header .nav-list .current::after {
   content: "";
   position: absolute;
   background-color: #2196f3;
@@ -103,13 +111,20 @@ img {
 }
 .header .contact-list {
   display: flex;
+  justify-content: _;
+  align-items: _;
   gap: 50px;
+  flex-wrap: _;
+  flex-direction: _;
   margin-left: auto;
 }
 .header .contact-list-item {
   display: flex;
+  justify-content: _;
   align-items: center;
   gap: 10px;
+  flex-wrap: _;
+  flex-direction: _;
 }
 .header .contact-list-item:hover .contact-list-icon {
   fill: #2196f3;
@@ -118,8 +133,9 @@ img {
   color: #2196f3;
 }
 .header .contact-list-link {
-  font-weight: 500;
+  font-family: inherit;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16.41px;
   letter-spacing: 0.02em;
   color: #757575;

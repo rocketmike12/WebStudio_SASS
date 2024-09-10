@@ -7,6 +7,7 @@
 }
 
 @mixin flex($justify-content, $align-items, $gap, $flex-wrap, $flex-direction) {
+    display: flex;
     justify-content: $justify-content;
     align-items: $align-items;
     gap: $gap;
