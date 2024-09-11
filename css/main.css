@@ -330,4 +330,59 @@ img {
   height: 50px;
   margin: 0 auto;
   border-radius: 4px;
+}
+
+.features {
+  padding-top: 94px;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: _;
+  gap: _;
+  flex-wrap: _;
+  flex-direction: _;
+}
+.features-list-title {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.features-list-text {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.features-list-item {
+  width: 270px;
+  display: flex;
+  justify-content: _;
+  align-items: _;
+  gap: _;
+  flex-wrap: _;
+  flex-direction: column;
+}
+.features-list-item:nth-child(1)::before {
+  content: url("/img/img_18.png");
+  margin-bottom: 30px;
+}
+.features-list-item:nth-child(2)::before {
+  content: url("/img/img_19.png");
+  margin-bottom: 30px;
+}
+.features-list-item:nth-child(3)::before {
+  content: url("/img/img_20.png");
+  margin-bottom: 30px;
+}
+.features-list-item:nth-child(4)::before {
+  content: url("/img/img_21.png");
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

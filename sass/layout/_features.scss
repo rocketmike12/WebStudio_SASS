@@ -1,0 +1,48 @@
+.features {
+    padding-top: 94px;
+    &-list {
+        @include flex(space-between, _, _, _, _);
+        &-title {
+            @include typography(inherit, 14px, 700, 16.41px, 0.03em);
+            color: $dgrey;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        
+        &-text {
+            @include typography(inherit, 14px, 400, 24px, 0.03em);
+            color: $lgrey;
+        }
+
+        &-item {
+            width: 270px;
+            @include flex(_, _, _, _, column);
+            &:nth-child(1)::before {
+                content: url("/img/img_18.png");
+                margin-bottom: 30px;
+            }
+            
+            &:nth-child(2)::before {
+                content: url("/img/img_19.png");
+                margin-bottom: 30px;
+            }
+            
+            &:nth-child(3)::before {
+                content: url("/img/img_20.png");
+                margin-bottom: 30px;
+            }
+            
+            &:nth-child(4)::before {
+                content: url("/img/img_21.png");
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
