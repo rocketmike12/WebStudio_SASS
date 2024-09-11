@@ -297,4 +297,37 @@ img {
 }
 .header .contact-list-icon {
   fill: #757575;
+}
+
+.hero {
+  background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  font-family: inherit;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+  text-align: center;
+}
+.hero-btn {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 216px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
