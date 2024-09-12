@@ -10,18 +10,6 @@
         @include flex(_, center, 93px, _, _);
     }
 
-    .company-logo {
-        @include typography(Raleway, 26px, 700, 35.96px, 0.03em);
-        color: $accent-color;
-        &-header {
-            color: $black;
-        }
-        
-        &-footer {
-            color: $white; 
-        }
-    }
-
     .nav-list {
         @include flex(_, _, 60px, _, _);
         &-link {
@@ -50,7 +38,6 @@
         margin-left: auto;
         &-item {
             @include flex(_, center, 10px, _, _);
-            
             &:hover {
                 .contact-list-icon {
                     fill: $accent-color;
@@ -70,5 +57,17 @@
         &-icon {
             fill: $lgrey;
         }   
+    }
+}
+
+.company-logo {
+    @include typography(Raleway, 26px, 700, 35.96px, 0.03em);
+    color: $accent-color;
+    &-header {
+        color: $black;
+    }
+    
+    &-footer {
+        color: $white; 
     }
 }
