@@ -526,4 +526,50 @@ img {
 }
 .team-list-social-list-svg {
   fill: #AFB1B8;
+}
+
+.customers {
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-title {
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: _;
+  gap: _;
+  flex-wrap: _;
+  flex-direction: _;
+}
+.customers-list-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: _;
+  flex-wrap: _;
+  flex-direction: _;
+}
+.customers-list-item:hover {
+  border: 1px solid #2196f3;
+}
+.customers-list-item:hover .customers-list-use {
+  fill: #2196f3;
+  transition: 500ms;
+}
+.customers-list-item .customers-list-use {
+  fill: #AFB1B8;
 }/*# sourceMappingURL=main.css.map */

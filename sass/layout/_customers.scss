@@ -1,0 +1,36 @@
+.customers {
+    padding-left: 215px;
+    padding-right: 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-title {
+        @include typography(inherit, 36px, 700, 42.19px, 0.03em);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &-list {
+        @include flex(space-between, _, _, _, _);
+        &-item {
+            width: 170px;
+            height: 92px;
+            border: 1px solid $svggrey;
+            border-radius: 4px;
+            @include flex(center, center, _, _, _);
+            &:hover {
+                border: 1px solid $accent-color;
+                .customers-list-use {
+                    fill: $accent-color;
+                    transition: 500ms;
+                }
+            }
+
+            .customers-list-use {
+                fill: $svggrey;
+            }
+        }
+    }
+}
+
+
+
