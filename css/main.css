@@ -720,4 +720,106 @@ img {
 }
 .footer-form-svg {
   fill: #ffffff;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 94px;
+}
+.portfolio .filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .filter-list-btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #F5F4FA;
+  padding: 6px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: background-color color;
+  transition-duration: 0.4s;
+}
+.portfolio .filter-list-btn:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio .product-list-item {
+  border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+}
+.portfolio .product-list-item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
+}
+.portfolio .product-list-link:hover {
+  cursor: pointer;
+}
+.portfolio .product-list-link:hover.product-list-overlay-text {
+  transform: translate(0, 0);
+}
+.portfolio .product-list-overlay-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .product-list-overlay-text {
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.8980392157);
+  padding: 63px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  transform: translate(0, 100%);
+  transition: 1s;
+}
+.portfolio .product-list-img {
+  width: 370px;
+  height: 294px;
+  display: block;
+}
+.portfolio .product-list-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.portfolio .product-list-type {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+}
+.portfolio .product-list-text-wrap {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
