@@ -483,7 +483,7 @@ img {
 }
 
 .hero {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -519,10 +519,15 @@ img {
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
-  width: 216px;
+  width: 200px;
   height: 50px;
   margin: 0 auto;
   border-radius: 4px;
+}
+@media screen and (min-width: 1199px) {
+  .hero-btn {
+    width: 216px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .hero {
