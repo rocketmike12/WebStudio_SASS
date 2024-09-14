@@ -220,10 +220,21 @@ img {
   padding: 48px 40px;
   transform: translateX(0);
   transition: 500ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: _;
+  gap: _;
+  flex-wrap: _;
+  flex-direction: column;
+}
+.mobile-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(100%);
 }
 .mobile-menu-btn-close {
   background: transparent;
-  color: #212121;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -233,13 +244,11 @@ img {
 .mobile-menu-btn-close use {
   fill: #212121;
 }
-.mobile-menu-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: _;
-  gap: _;
-  flex-wrap: _;
-  flex-direction: column;
+.mobile-menu-btn-close:hover use {
+  fill: #2196f3;
+}
+.mobile-menu-nav-list {
+  margin-top: 8px;
 }
 .mobile-menu-nav-list-item:not(:last-child) {
   margin-bottom: 32px;
@@ -248,7 +257,7 @@ img {
   font-family: inherit;
   font-size: 40px;
   font-weight: 500;
-  line-height: 46.88;
+  line-height: 46.88px;
   letter-spacing: 0.02em;
   text-align: left;
   color: #212121;
@@ -257,35 +266,37 @@ img {
   color: #2196f3;
 }
 .mobile-menu-contact-list {
-  margin-top: 302px;
   margin-bottom: 64px;
+  text-align: left;
 }
 .mobile-menu-contact-list-item {
   margin-bottom: 32px;
 }
-.mobile-menu-contact-list-link:first-child {
+.mobile-menu-contact-list-item:first-child {
   font-family: inherit;
   font-size: 34px;
   font-weight: 500;
   line-height: 39.84px;
   letter-spacing: 0.02em;
-  text-align: left;
   color: #2196f3;
 }
-.mobile-menu-contact-list-link-mail:last-child {
+.mobile-menu-contact-list-item:last-child {
   font-family: inherit;
   font-size: 24px;
   font-weight: 500;
   line-height: 28.13px;
   letter-spacing: 0.02em;
-  text-align: left;
   color: #757575;
 }
 .mobile-menu-social-list {
   display: flex;
+  justify-content: _;
+  align-items: _;
   gap: 10px;
+  flex-wrap: _;
+  flex-direction: _;
 }
-.mobile-menu-social-list-social-list-item:not(:first-child) {
+.mobile-menu-social-list-item:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.1254901961);
   padding-left: 10px;
 }
@@ -297,15 +308,6 @@ img {
   letter-spacing: 0.02em;
   text-align: left;
   color: #2196f3;
-}
-.mobile-menu-btn-close:hover use {
-  fill: #2196f3;
-}
-.mobile-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: translateX(100%);
 }
 
 .header {
