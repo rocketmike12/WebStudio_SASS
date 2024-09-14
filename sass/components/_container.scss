@@ -5,10 +5,12 @@
     @include mob(480px){
         width: 480px;
     }
+
     @include tab(767px){
             width: 768px;
     }
-    @include desc(1199px){
+
+    @include desk(1199px){
         width: 1200px;
     }
 }

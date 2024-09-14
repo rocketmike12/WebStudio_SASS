@@ -1,17 +1,20 @@
 .header {
     background-color: $white;
     width: 100%;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid #ECECEC;
     position: fixed;
     top: 0;
     &-container {
-        @include flex(_, center, 93px, _, _);
+        @include flex(space-between, center, _, _, _);
+        @include desk(1199px) {
+            @include flex(space-between, center, 93px, _, _);
+        }
     }
 
     .nav-list {
-        @include flex(_, _, 60px, _, _);
+        display: none;
         &-link {
             @include typography(inherit, 14px, 500, 16.41px, 0.02em);
             color: $dgrey;
@@ -19,6 +22,7 @@
                 color: $accent-color;
             }
         }
+
         .current {
             position: relative;
             &::after {
@@ -32,10 +36,14 @@
                 left: 0;
             }
         }
+
+        @include tab(767px) {
+            @include flex(_, _, 60px, _, _);
+        }
     }
+
     .contact-list {
-        @include flex(_, _, 50px, _, _);
-        margin-left: auto;
+        display: none;
         &-item {
             @include flex(_, center, 10px, _, _);
             &:hover {
@@ -51,17 +59,52 @@
         
         &-link {
             @include typography(inherit, 14px, 500, 16.41px, 0.02em);
+            text-align: left;
             color: $lgrey;
+            @include tab(767px) {
+                @include typography(inherit, 12px, 500, 14.06px, 0.02em);
+            }
         }
         
         &-icon {
             fill: $lgrey;
-        }   
+        }
+        
+        @include tab(767px) {
+            @include flex(_, _, 10px, _, column);
+        }
+
+        @include desk(1199px) {
+            @include flex(_, _, 50px, _, row);
+            margin-left: auto;
+        }
+    }
+
+    .mobile-menu-btn-open {
+        background: transparent;
+        .mobile-menu-svg {
+            fill: $dgrey;
+        }
+
+        @include tab(767px) {
+            display: none;
+        }
+    }
+
+    @include tab(767px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @include desk(1199px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
 
 .company-logo {
-    @include typography(Raleway, 26px, 700, 35.96px, 0.03em);
+    @include typography(Raleway, 24px, 700, 28.18px, 0.03em);
+    text-align: left;
     color: $accent-color;
     &-header {
         color: $black;
@@ -69,5 +112,9 @@
     
     &-footer {
         color: $white; 
+    }
+
+    @include desk(1199px) {
+        @include typography(Raleway, 26px, 700, 35.96px, 0.03em);
     }
 }

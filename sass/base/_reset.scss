@@ -1,3 +1,7 @@
+body {
+    font-family: Roboto;
+}
+
 ul, ol {
     list-style: none;
     margin: 0;
@@ -23,4 +27,8 @@ button {
 
 img {
     display: block;
+}
+
+.features, .work, .team, .customers, .footer {
+    display: none;
 }

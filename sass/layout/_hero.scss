@@ -1,16 +1,20 @@
 .hero {
     // background-image: url("/img/img_17.png");
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     &-title {
-        @include typography(inherit, 44px, 900, 60px, 0.06em);
+        @include typography(inherit, 26px, 900, 42px, 0.06em);
         color: $white;
         text-transform: uppercase;
         margin: 0 auto;
         margin-bottom: 30px;
-        max-width: 696px;
+        max-width: 360px;
         text-align: center;
+        @include desk(1199px) {
+            @include typography(inherit, 44px, 900, 60px, 0.06em);
+            max-width: 696px;
+        }
     }
     
     &-btn {
@@ -22,5 +26,10 @@
         height: 50px;
         margin: 0 auto;
         border-radius: 4px;
+    }
+
+    @include desk(1199px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
