@@ -29,7 +29,7 @@ img {
   display: block;
 }
 
-.team, .customers, .footer {
+.customers, .footer {
   display: none;
 }
 
@@ -711,8 +711,7 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
 }
 .team-title {
   font-family: inherit;
@@ -722,23 +721,51 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1199px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
-  align-items: _;
-  gap: _;
-  flex-wrap: _;
-  flex-direction: _;
+  justify-content: _;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 .team-list-item {
   background-color: #ffffff;
-  width: 270px;
-  height: 428px;
+  width: 450px;
+  height: 622px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 767px) {
+  .team-list-item {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team-list-item {
+    width: 270px;
+    height: 428px;
+  }
+}
+.team-list-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1199px) {
+  .team-list-img {
+    width: 450px;
+    height: 460px;
+  }
 }
 .team-list-title {
   font-family: inherit;
@@ -800,6 +827,31 @@ img {
 }
 .team-list-social-list-svg {
   fill: #AFB1B8;
+}
+@media screen and (min-width: 767px) {
+  .team-list {
+    display: flex;
+    justify-content: _;
+    align-items: _;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: _;
+    gap: nowrap;
+    flex-wrap: _;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .team {
+    padding: 94px 0px;
+  }
 }
 
 .customers {
