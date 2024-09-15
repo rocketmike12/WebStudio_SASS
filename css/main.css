@@ -29,7 +29,7 @@ img {
   display: block;
 }
 
-.features, .work, .team, .customers, .footer {
+.team, .customers, .footer {
   display: none;
 }
 
@@ -559,15 +559,15 @@ img {
 }
 
 .features {
-  padding-top: 94px;
+  padding: 60px 0px;
 }
 .features-list {
   display: flex;
-  justify-content: space-between;
-  align-items: _;
-  gap: _;
+  justify-content: _;
+  align-items: center;
+  gap: 30px;
   flex-wrap: _;
-  flex-direction: _;
+  flex-direction: column;
 }
 .features-list-title {
   font-family: inherit;
@@ -578,6 +578,13 @@ img {
   color: #212121;
   text-transform: capitalize;
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .features-list-title {
+    text-align: left;
+  }
 }
 .features-list-text {
   font-family: inherit;
@@ -588,10 +595,10 @@ img {
   color: #757575;
 }
 .features-list-item {
-  width: 270px;
+  width: 450px;
   display: flex;
   justify-content: _;
-  align-items: _;
+  align-items: center;
   gap: _;
   flex-wrap: _;
   flex-direction: column;
@@ -612,8 +619,44 @@ img {
   content: url("/img/img_21.png");
   margin-bottom: 30px;
 }
+@media screen and (min-width: 767px) {
+  .features-list-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .features-list-item {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .features-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: _;
+    gap: 0px;
+    flex-wrap: _;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .features {
+    padding: 94px 0px;
+  }
+}
 
 .work {
+  display: none;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -659,6 +702,11 @@ img {
   gap: _;
   flex-wrap: _;
   flex-direction: _;
+}
+@media screen and (min-width: 1199px) {
+  .work {
+    display: block;
+  }
 }
 
 .team {

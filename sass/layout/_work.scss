@@ -1,4 +1,5 @@
 .work {
+    display: none;
     padding-top: 94px;
     padding-bottom: 94px;
     &-title {
@@ -27,5 +28,9 @@
             @include typography(inherit, 14px, 700, 16.41px, 0.03em);
             @include flex(center, center, _, _, _)
         }
+    }
+
+    @include desk(1199px) {
+        display: block;
     }
 }
