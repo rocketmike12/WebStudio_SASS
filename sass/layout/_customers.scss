@@ -1,18 +1,20 @@
 .customers {
-    padding-left: 215px;
-    padding-right: 215px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0px;
     &-title {
-        @include typography(inherit, 36px, 700, 42.19px, 0.03em);
+        @include typography(inherit, 700, 28px, 32.81px, 0.03em);
+        color: $dgrey;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        @include desk(1199px) {
+            margin-bottom: 50px;
+            @include typography(inherit, 36px, 700, 42.19px, 0.03em);
+        }
     }
     
     &-list {
-        @include flex(space-between, _, _, _, _);
+        @include flex(center, _, 30px, wrap, _);
         &-item {
-            width: 170px;
+            width: 210px;
             height: 92px;
             border: 1px solid $svggrey;
             border-radius: 4px;
@@ -28,6 +30,22 @@
             .customers-list-use {
                 fill: $svggrey;
             }
+
+            @include tab(767px) {
+                width: 226px;
+            }
+
+            @include desk(1199px) {
+                width: 170px;
+            }
         }
+
+        @include desk(1199px) {
+            @include flex(space-between, _, 0px, nowrap, _);
+        }
+    }
+
+    @include desk(1199px) {
+        padding: 94px 0px;
     }
 }
