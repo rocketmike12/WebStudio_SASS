@@ -33,12 +33,18 @@
 
         &-img {
             // TODO це тимчасовий костиль
-            width: 100%;
-            height: auto;
             border-radius: 0px 0px 4px 4px; 
+            width: 450px;
+            height: 460px;
+
+            @include tab(767px) {
+                width: 354px;
+                height: 374px;
+            }
+
             @include desk(1199px) {
-                width: 450px;
-                height: 460px;
+                width: 270px;
+                height: 260px;
             }
         }
 

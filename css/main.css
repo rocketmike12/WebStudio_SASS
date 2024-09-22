@@ -757,14 +757,20 @@ img {
   }
 }
 .team-list-img {
-  width: 100%;
-  height: auto;
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 767px) {
+  .team-list-img {
+    width: 354px;
+    height: 374px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .team-list-img {
-    width: 450px;
-    height: 460px;
+    width: 270px;
+    height: 260px;
   }
 }
 .team-list-title {
