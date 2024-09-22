@@ -3,12 +3,30 @@
     padding-top: 60px;
     padding-bottom: 60px;
     &-container {
-        @include flex(_, _, _, _, _);
+        @include flex(_, center, _, _, column);
+        @include tab(767px) {
+            @include flex(center, _, _, wrap, row);
+            row-gap: 60px;
+            column-gap: 165px;
+        }
+
+        @include desk(1199px) {
+            @include flex(space-between, center, 0px, nowrap, row);
+        }
+    }
+
+    .company-logo {
+        display: block;
+        text-align: center;
+        @include desk(1199px) {
+            display: inline;
+        }
     }
 
     .address {
         margin-top: 20px;
-        margin-right: 70px;
+        text-align: center;
+        margin-bottom: 60px;
         &-list {
             &-item {
                 margin-top: 9px;
@@ -24,16 +42,31 @@
                 color: rgba(255, 255, 255, 60%);
             }
         }
+
+        @include tab(767px) {
+            margin-bottom: 0px;
+        }
+
+        @include desk(1199px) {
+            text-align: left;
+        }
     }
 
     &-social-wrapper {
         margin-top: 12px;
-        margin-left: 70px;
+        margin-bottom: 60px;
+        @include tab(767px) {
+            margin-bottom: 0px;
+        }
+
+        @include desk(1199px) {
+            margin-left: 70px;
+        }
     }
 
     &-join {
         @include typography(inherit, 14px, 700, 16.41px, 0.03em);
-        text-align: left;
+        text-align: center;
         color: $white;
         &-social-list {
             @include flex(center, center, 10px, _, _);
@@ -58,24 +91,33 @@
                 fill: $white;
             }
         }
+
+        @include desk(1199px) {
+            text-align: left;
+        }
     }
 
     &-form {
-        @include flex(_, center, 12px, _, _);
+        @include flex(_, center, 20px, _, column);
         &-wrapper {
-            margin-left: 93px;
             margin-top: 12px;
+            @include desk(1199px) {
+                margin-left: 93px;
+            }
         }
         
         &-title {
             @include typography(inherit, 14px, 700, 16.41px, 0.03em);
-            text-align: left;
+            text-align: center;
             color: $white;
             margin-bottom: 20px;
+            @include desk(1199px) {
+                text-align: left;
+            }
         }
         
         &-input {
-            width: 358px;
+            width: 450px;
             height: 50px;
             border-radius: 4px;
             background-color: transparent;
@@ -85,6 +127,9 @@
             color: #FFFFFF99;
             padding-left: 16px;
             outline: none;
+            @include desk(1199px) {
+                width: 358px;
+            }
         }
         
         &-btn {
@@ -101,6 +146,10 @@
         
         &-svg {
             fill: $white;
+        }
+
+        @include desk(1199px) {
+            @include flex(_, center, 12px, _, row);
         }
     }
 }
