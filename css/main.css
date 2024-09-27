@@ -752,23 +752,6 @@ img {
     height: 428px;
   }
 }
-.team-list-img {
-  border-radius: 0px 0px 4px 4px;
-  width: 450px;
-  height: 460px;
-}
-@media screen and (min-width: 767px) {
-  .team-list-img {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .team-list-img {
-    width: 270px;
-    height: 260px;
-  }
-}
 .team-list-title {
   font-family: inherit;
   font-size: 16px;

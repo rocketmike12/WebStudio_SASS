@@ -31,23 +31,6 @@
             }
         }
 
-        &-img {
-            // TODO це тимчасовий костиль
-            border-radius: 0px 0px 4px 4px; 
-            width: 450px;
-            height: 460px;
-
-            @include tab(767px) {
-                width: 354px;
-                height: 374px;
-            }
-
-            @include desk(1199px) {
-                width: 270px;
-                height: 260px;
-            }
-        }
-
         &-title {
             @include typography(inherit, 16px, 500, 18.75px, 0.03em);
             text-align: center;
