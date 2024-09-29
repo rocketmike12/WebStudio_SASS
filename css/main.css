@@ -525,7 +525,7 @@ img {
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    max-width: 625px;
   }
 }
 .hero-btn {
@@ -614,19 +614,19 @@ img {
   flex-direction: _;
 }
 .features-list-item:nth-child(1)::before {
-  content: url("/img/antenna.svg");
+  content: url("../img/antenna.svg");
   margin-bottom: 30px;
 }
 .features-list-item:nth-child(2)::before {
-  content: url("/img/clock.svg");
+  content: url("../img/clock.svg");
   margin-bottom: 30px;
 }
 .features-list-item:nth-child(3)::before {
-  content: url("/img/diagram.svg");
+  content: url("../img/diagram.svg");
   margin-bottom: 30px;
 }
 .features-list-item:nth-child(4)::before {
-  content: url("/img/astronaut.svg");
+  content: url("../img/astronaut.svg");
   margin-bottom: 30px;
 }
 @media screen and (min-width: 767px) {

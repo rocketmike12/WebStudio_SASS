@@ -13,7 +13,7 @@
         text-align: center;
         @include desk(1199px) {
             @include typography(inherit, 44px, 900, 60px, 0.06em);
-            max-width: 696px;
+            max-width: 625px;
         }
     }
     
