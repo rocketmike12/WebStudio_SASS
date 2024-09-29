@@ -6,6 +6,7 @@
     border: 1px solid #ECECEC;
     position: fixed;
     top: 0;
+    z-index: 1;
     &-container {
         @include flex(space-between, center, _, _, _);
         @include desk(1199px) {
