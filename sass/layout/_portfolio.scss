@@ -1,12 +1,11 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0px;    
     &-container {
         @include flex(_, center, _, _, column);
-        padding-bottom: 94px;
         .filter-list {
             margin-bottom: 50px;
-            @include flex(space-between, _, 8px, _, _);
+            @include flex(_, _, 8px, wrap, _);
+            row-gap: 15px;
             &-btn {
                 @include typography(inherit, 16px, 500, 26px, 0.03em);
                 color: $dgrey;
@@ -21,18 +20,30 @@
                     background-color: $accent-color;
                 }
             }
+
+            @include desk(1199px) {
+                @include flex(space-between, _, 8px, _, _);
+            }
         }
 
         .product-list {
             @include flex(_, _, 30px, wrap, _);
             &-item {
                 border: 1px solid #eeeeee;
-                width: 370px;
+                width: 450px;
                 height: 404px;
                 &:hover {
                     box-shadow: 1px 4px 6px 0px #00000029;
                     box-shadow: 0px 4px 4px 0px #0000000F;
                     box-shadow: 0px 1px 1px 0px #0000001F;
+                }
+
+                @include tab(767px) {
+                    width: 354px;
+                }
+
+                @include desk(1199px) {
+                    width: 370px;
                 }
             }
     
@@ -62,8 +73,6 @@
             }
     
             &-img {
-                width: 370px;
-                height: 294px;
                 display: block;
             }
             
@@ -83,5 +92,9 @@
                 padding: 20px 24px 22px 24px;
             }
         }
+    }
+
+    @include desk(1199px) {
+        padding: 94px 0px;
     }
 }

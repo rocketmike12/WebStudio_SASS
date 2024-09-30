@@ -17,15 +17,62 @@
             <a class="company-logo" href="./index.html">Web<span class="company-logo-header">Studio</span></a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Studio</a></li>
-                    <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link current">Portfolio</a></li>
+                    <li class="nav-list-item"><a href="./index.html" class="nav-list-link current">Studio</a></li>
+                    <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link">Portfolio</a></li>
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
-                <li class="contact-list-item"><a href="mailto:info@devstudio.com" class="contact-list-link">info@devstudio.com</a></li>
-                <li class="contact-list-item"><a href="tel:+380961111111" class="contact-list-link">+38 096 111 11 11</a></li>
+                <li class="contact-list-item"><svg width="16" height="12" class="contact-list-icon"><use href="./symbol-defs.svg#icon-envelope"></use></svg><a href="mailto:info@devstudio.com" class="contact-list-link">info@devstudio.com</a></li>
+                <li class="contact-list-item"><svg width="10" height="16" class="contact-list-icon"><use href="./symbol-defs.svg#icon-smartphone"></use></svg><a href="tel:+380961111111" class="contact-list-link">+38 096 111 11 11</a></li>
             </ul>
+            <button class="mobile-menu-btn-open"><svg width="40" height="40" class="mobile-menu-svg"><use href="./symbol-defs.svg#icon-menu" class="mobile-menu-use"></use></svg></button>
+        </div>
+        <div class="mobile-menu is-hidden">
+            <div class="mobile-menu-top-wrapper">
+                <button class="mobile-menu-btn-close">
+                    <svg class="mobile-menu-btn-close-svg" width="40" height="40">
+                        <use href="./symbol-defs.svg#icon-close" class="mobile-menu-btn-close-use"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav-list">
+                        <li class="mobile-menu-nav-list-item">
+                            <a class="mobile-menu-nav-list-link" href="">Studio</a>
+                        </li>
+                        <li class="mobile-menu-nav-list-item">
+                            <a class="mobile-menu-nav-list-link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-nav-list-item">
+                            <a class="mobile-menu-nav-list-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-bottom-wrapper">
+                <ul class="mobile-menu-contact-list">
+                    <li class="mobile-menu-contact-list-item">
+                        <a class="mobile-menu-contact-list-link" href="tel:380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu-contact-list-item">
+                        <a class="mobile-menu-contact-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu-social-list">
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -205,11 +252,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        const header = document.getElementById('header');
-        const headerHeight = header.offsetHeight;
-        const body = document.getElementById('body');
-        body.style.paddingTop = headerHeight + 'px';
-    </script>
+    <script src="./js/fixed-header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
