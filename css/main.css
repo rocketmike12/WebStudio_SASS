@@ -1193,7 +1193,7 @@ img {
   padding: 6px 25px;
   border-radius: 4px;
   cursor: pointer;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 0.4s;
 }
 .portfolio-container .filter-list-btn:hover {
