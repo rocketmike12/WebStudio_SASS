@@ -380,8 +380,13 @@ img {
   height: 4px;
   border-radius: 2px;
   width: 100%;
-  bottom: -35px;
+  bottom: -38px;
   left: 0;
+}
+@media screen and (min-width: 1199px) {
+  .header .nav-list .current::after {
+    bottom: -35px;
+  }
 }
 @media screen and (min-width: 767px) {
   .header .nav-list {
@@ -502,7 +507,10 @@ img {
 }
 
 .hero {
-  background-color: #2f303a;
+  background-image: url("/img/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
 }

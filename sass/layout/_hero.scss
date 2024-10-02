@@ -1,8 +1,11 @@
 .hero {
-    // background-image: url("/img/img_17.png");
-    background-color: $dark-background;
+    background-image: url("/img/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
+
     &-title {
         @include typography(inherit, 26px, 900, 42px, 0.06em);
         color: $white;
