@@ -62,7 +62,7 @@
             &-overlay-text {
                 color: $white;
                 background-color: #2196F3E5;
-                padding: 63px 24px;
+                padding: 77px 24px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -70,6 +70,13 @@
                 text-align: left;
                 transform: translate(0, 100%);
                 transition: 1s;
+                @include tab(767px) {
+                    padding: 50px 24px 77px 24px;
+                }
+
+                @include desk(1199px) {
+                    padding: 63px 24px;
+                }
             }
     
             &-img {

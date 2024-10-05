@@ -1264,7 +1264,7 @@ img {
 .portfolio-container .product-list-overlay-text {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.8980392157);
-  padding: 63px 24px;
+  padding: 77px 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1276,6 +1276,16 @@ img {
   text-align: left;
   transform: translate(0, 100%);
   transition: 1s;
+}
+@media screen and (min-width: 767px) {
+  .portfolio-container .product-list-overlay-text {
+    padding: 50px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .portfolio-container .product-list-overlay-text {
+    padding: 63px 24px;
+  }
 }
 .portfolio-container .product-list-img {
   display: block;
