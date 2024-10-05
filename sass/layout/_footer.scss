@@ -80,6 +80,8 @@
                 &:hover {
                     background-color: $accent-color;
                     cursor: pointer;
+                    transition: 500ms;
+                    transition-property: background-color; 
                 }
             }
             

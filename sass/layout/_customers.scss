@@ -24,6 +24,7 @@
                 .customers-list-use {
                     fill: $accent-color;
                     transition: 500ms;
+                    transition-property: fill;
                 }
             }
 

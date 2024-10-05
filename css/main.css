@@ -821,6 +821,8 @@ img {
 .team-list-social-list-item:hover {
   background-color: #2196f3;
   cursor: pointer;
+  transition: 500ms;
+  transition-property: background-color;
 }
 .team-list-social-list-item:hover .team-list-social-list-link > .team-list-social-list-svg {
   fill: #ffffff;
@@ -911,6 +913,7 @@ img {
 .customers-list-item:hover .customers-list-use {
   fill: #2196f3;
   transition: 500ms;
+  transition-property: fill;
 }
 .customers-list-item .customers-list-use {
   fill: #AFB1B8;
@@ -1066,6 +1069,8 @@ img {
 .footer-join-social-list-item:hover {
   background-color: #2196f3;
   cursor: pointer;
+  transition: 500ms;
+  transition-property: background-color;
 }
 .footer-join-social-list-link {
   display: flex;
